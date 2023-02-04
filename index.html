@@ -86,74 +86,61 @@
       </div>
 
     <h2 class="testimonialsHeading">Testimonials</h2>
-
-    <diiv class="container">
-      <div class="testimonialSlides"> 
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+    
+    <div class="testimonialSlides"> 
+      <div class="container"> 
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-              <div class="row">
-                <div class="col lg 4">
-                   <img src="noffers.jpg" class="d-block w-100" alt="...">
-                 </div>
-                 <div class="col lg 4">
-                   <img src="noffers.jpg" class="d-block w-100" alt="...">
-                 </div>
-                <div class="col lg 4">
-                   <img src="noffers.jpg" class="d-block w-100" alt="...">
-                </div>
-              </div>  
-          </div>
           <div class="carousel-item active">
             <div class="row">
               <div class="col lg 4">
-                 <img src="noffers.jpg" class="d-block w-100" alt="...">
-               </div>
-               <div class="col lg 4">
-                 <img src="noffers.jpg" class="d-block w-100" alt="...">
-               </div>
+                <img src="images/meghan-holmes-buWcS7G1_28-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
               <div class="col lg 4">
-                 <img src="noffers.jpg" class="d-block w-100" alt="...">
+                <img src="images/gina-lin-m27OTMegUyA-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="col lg 4">
+                <img src="images/gina-lin-m27OTMegUyA-unsplash.jpg" class="d-block w-100" alt="...">
               </div>
             </div>  
-        </div>
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col lg 4">
-               <img src="noffers.jpg" class="d-block w-100" alt="...">
-             </div>
-             <div class="col lg 4">
-               <img src="noffers.jpg" class="d-block w-100" alt="...">
-             </div>
-            <div class="col lg 4">
-               <img src="noffers.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>  
-      </div>
           </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col lg 4">
+                <img src="images/rodrigo-s-2mz9IKab7DE-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="col lg 4">
+                <img src="images/sam-moghadam-khamseh-Z4Q9KHw9ofE-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="col lg 4">
+                <img src="images/sule-makaroglu-YFmvjO3TP_s-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col lg 4">
+                <img src="images/sushil-ghimire-eFx1KZhaSvo-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="col lg 4">
+                <img src="images/sven-mieke-jO6vBWX9h9Y-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="col lg 4">
+                <img src="images/valery-sysoev-LDAirERNzew-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
       </div>
-     </div> 
-    </diiv>
+      </div>
 
     <h2 class="contactHeading">Contact</h2>
 
     <form action="mailto:samwrighty@hotmail.co.uk"
-    method="POST"
-    enctype="multipart/form-data"
-    name="EmailForm">
+      method="POST"
+      enctype="multipart/form-data"
+      name="EmailForm">
         Name:<br>
         <input type="text" size="19" name="Contact-Name"><br><br>
         Email:<br>
@@ -171,14 +158,17 @@
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
       </a>
   
-      <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Email</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Instagram</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Facebook</a></li>
-      </ul>
+      <!-- setting all icons used in buttons to have the same width using fa-fw -->
+<div>
+  <span style="padding: 0.5em;"><i class="fa-regular fa-envelope fa-2x" title="Email"></i></span>
+  <span style="padding: 0.5em;"><i class="fa-brands fa-instagram fa-2x" title="Instagram"></i></span>
+  <span style="padding: 0.5em;"><i class="fa-brands fa-facebook fa-2x" title="Facebook"></i></span>
+</div>
+
     </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script type="module" src="assets/js/starter.js"></script>
+    <script src="https://kit.fontawesome.com/105932e37b.js" crossorigin="anonymous"></script>
   </body>
 </html>
