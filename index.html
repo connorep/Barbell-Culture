@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/starter.css">
+    <link rel="stylesheet" href="assets/css/homepage.css">
     <title>Barbell Culture</title>
   </head>
   <body>
+    <!--- Navbar code ---->
     <nav class="navbar navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
         <img src="noffers.jpg" alt="Logo" width="75" height="75">
@@ -27,9 +28,10 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
+              <!--Hamburger Menu-->
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
-                <a class="nav-link" href="">Gallery</a>
+                <a class="nav-link" href="/gallery.html">Gallery</a>
                 <a class="nav-link" href="">Testimonials</a>
                 <a class="nav-link" href="">Socials</a>
               </li>
@@ -40,7 +42,7 @@
         </div>
       </div>
     </nav>
-
+    <!--Main Card code-->
     <div class="card cardMove">
       <div class="card-body">
         <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
@@ -51,7 +53,7 @@
         of Lorem Ipsum.</p>
       </div>
     </div>
-  
+    <!--How we do it Carousel-->
     <div class="row row-cols-1 row-cols-md-3 g-4 howWeDoIt">
       <div class="col">
         <div class="card">
@@ -84,9 +86,8 @@
         </div>
        </div>
       </div>
-
+    <!--Testimonials Carousel-->
     <h2 class="testimonialsHeading">Testimonials</h2>
-    
     <div class="testimonialSlides"> 
       <div class="container"> 
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -94,7 +95,7 @@
           <div class="carousel-item active">
             <div class="row">
               <div class="col lg 4">
-                <img src="images/meghan-holmes-buWcS7G1_28-unsplash.jpg" class="d-block w-100" alt="...">
+                <img src="images/meghan-holmes-buWcS7G1_28-unsplash.jpg" class="d-block w-100 h-100" alt="...">
               </div>
               <div class="col lg 4">
                 <img src="images/gina-lin-m27OTMegUyA-unsplash.jpg" class="d-block w-100" alt="...">
@@ -107,7 +108,7 @@
           <div class="carousel-item">
             <div class="row">
               <div class="col lg 4">
-                <img src="images/rodrigo-s-2mz9IKab7DE-unsplash.jpg" class="d-block w-100" alt="...">
+                <img src="images/rodrigo-s-2mz9IKab7DE-unsplash.jpg" class="d-block w-100 h-100" alt="...">
               </div>
               <div class="col lg 4">
                 <img src="images/sam-moghadam-khamseh-Z4Q9KHw9ofE-unsplash.jpg" class="d-block w-100" alt="...">
@@ -134,41 +135,56 @@
        </div>
       </div>
       </div>
+    <!--Contact Us-->
+    <h2 class="contactHeading">Contact us</h2>
+    <div class="container px-5 my-5">
+      <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <div class="mb-3">
+              <label class="form-label" for="emailAddress">Email Address</label>
+              <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+              <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+              <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+          </div>
+          <div class="mb-3">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+              <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+          </div>
+          <div class="d-none" id="submitSuccessMessage">
+              <div class="text-center mb-3">
+                  <div class="fw-bolder">Form submission successful!</div>
+                  <p>To activate this form, sign up at</p>
+                  <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+              </div>
+          </div>
+          <div class="d-none" id="submitErrorMessage">
+              <div class="text-center text-danger mb-3">Error sending message!</div>
+          </div>
+          <div class="d-grid">
+              <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+          </div>
+      </form>
+  </div>
 
-    <h2 class="contactHeading">Contact</h2>
-
-    <form action="mailto:samwrighty@hotmail.co.uk"
-      method="POST"
-      enctype="multipart/form-data"
-      name="EmailForm">
-        Name:<br>
-        <input type="text" size="19" name="Contact-Name"><br><br>
-        Email:<br>
-        <input type="email" name="Contact-Email"><br><br> 
-        Message:<br> 
-        <textarea name="Contact-Message" rows="6″ cols="20″>
-        </textarea><br><br> 
-        <button type="submit" value="Submit">Send</button>
-    </form>
-
+    <!--Site Footer-->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <p class="col-md-4 mb-0 text-muted">© 2023 Barbell Culture</p>
-  
       <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
       </a>
-  
-      <!-- setting all icons used in buttons to have the same width using fa-fw -->
-<div>
-  <span style="padding: 0.5em;"><i class="fa-regular fa-envelope fa-2x" title="Email"></i></span>
-  <span style="padding: 0.5em;"><i class="fa-brands fa-instagram fa-2x" title="Instagram"></i></span>
-  <span style="padding: 0.5em;"><i class="fa-brands fa-facebook fa-2x" title="Facebook"></i></span>
-</div>
-
+      <div>
+        <span style="padding: 0.5em;"><i class="fa-regular fa-envelope fa-2x" title="Email"></i></span>
+        <span style="padding: 0.5em;"><i class="fa-brands fa-instagram fa-2x" title="Instagram"></i></span>
+        <span style="padding: 0.5em;"><i class="fa-brands fa-facebook fa-2x" title="Facebook"></i></span>
+      </div>
     </footer>
 
+   <!--Javascript-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script type="module" src="assets/js/starter.js"></script>
     <script src="https://kit.fontawesome.com/105932e37b.js" crossorigin="anonymous"></script>
+
   </body>
 </html>
+
+
