@@ -81,6 +81,21 @@ body {
 }
 
 .stayConnected {
-  text-align: right;
+  text-align: center;
 }
 
+
+.contactHeading {
+  text-align: center;
+}
+
+.iconsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+i {
+  padding-bottom: 0.5em;
+  padding-right: 0.2em;
+}
