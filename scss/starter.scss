@@ -80,10 +80,14 @@ body {
   text-align: center;
 }
 
-.stayConnected {
-  text-align: center;
+.socialCards {
+  margin-top: 5%;
 }
 
+.stayConnectedCard {
+  text-align: center;
+  height: 100%;
+}
 
 .contactHeading {
   text-align: center;
@@ -92,7 +96,7 @@ body {
 .iconsContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 i {

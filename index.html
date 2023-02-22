@@ -136,49 +136,58 @@
       </div>
       </div>
     <!--Contact Us-->
-    <div class="container-fluid">
-      <div class="row justify-content-around">
-        <div class="col-4">
-          <h2 class="contactHeading">Contact us</h2>
-          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-            <div class="mb-3">
-              <label class="form-label" for="emailAddress">Email Address</label>
-              <input class="form-control" id="emailAddress" type="email" style="width: 35rem;" placeholder="Email Address" data-sb-validations="required,email" />
-              <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-              <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-            </div>
-            <div class="mb-3">
-              <label class="form-label" for="message">Message</label>
-              <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem; width: 35rem;" data-sb-validations="required"></textarea>
-              <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-            </div>
-            <div class="d-none" id="submitSuccessMessage">
-              <div class="text-center">
-                <div class="fw-bolder">Form submission successful!</div>
-                  <p>To activate this form, sign up at</p>
-                  <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                </div>
-            </div>
-            <div class="d-none" id="submitErrorMessage">
-                <div class="text-center text-danger mb-3">Error sending message!</div>
-            </div>
-            <div class="d-grid">
-                <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit" style="width: 35rem;">Submit</button>
-            </div>
-        </form>
+    <div class="container socialCards">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Contact us</h5>
+              <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+              <div class="mb-3">
+                <label class="form-label" for="emailAddress">Email Address</label>
+                <input class="form-control" id="emailAddress" type="email" style="width: 100%;" placeholder="Email Address" data-sb-validations="required,email" />
+                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem; width: 100%;" data-sb-validations="required"></textarea>
+                <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+              </div>
+              <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center">
+                  <div class="fw-bolder">Form submission successful!</div>
+                    <p>To activate this form, sign up at</p>
+                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                  </div>
+              </div>
+              <div class="d-none" id="submitErrorMessage">
+                  <div class="text-center text-danger mb-3">Error sending message!</div>
+              </div>
+              <div class="d-grid">
+                  <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit" style="width: 100%;">Submit</button>
+              </div>
+           </form>
+           </div>
+         </div>
         </div>
-        <div class="col-4">
-          <h2 class="stayConnected">Stay connected</h2>
-          <div class="iconsContainer">
-            <span><i class="fa-regular fa-envelope fa-2x"></i>Email</span>
-            <span><i class="fa-brands fa-instagram fa-2x"></i>Instagram</span>
-            <span><i class="fa-brands fa-facebook fa-2x"></i>Facebook</span>
-            <span><i class="fa-solid fa-phone fa-2x"></i>Telephone 0121 do 1</span>
+       <!-- Stay connected-->
+       <div class="col">
+         <div class="card stayConnectedCard">
+           <div class="card-body">
+            <h2 class="card-title">Stay connected</h5>
+              <div class="iconsContainer">
+                <span><i class="fa-regular fa-envelope fa-2x"></i>BarbellCulture@gmail.com</span>
+                <span><i class="fa-brands fa-instagram fa-2x"></i>@BarbellCulture</span>
+                <span><i class="fa-brands fa-facebook fa-2x"></i>Barbell Culture</span>
+                <span><i class="fa-solid fa-phone fa-2x"></i>12345678910</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div> 
-
+    </div>
+    
     <!--Site Footer-->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <p class="col-md-4 mb-0 text-muted">© 2023 Barbell Culture</p>
